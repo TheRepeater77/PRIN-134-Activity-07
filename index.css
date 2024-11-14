@@ -3,3 +3,30 @@
     padding: 0;
     margin: 0;
 }
+
+.spin-text-con{
+    position: relative;
+    top: 50vh;
+
+    width: 100%;
+}
+
+@keyframes animation{
+    0%{
+        rotate: -90deg;
+    }
+    100%{
+        rotate: 90deg
+    }
+}
+.spin-text{
+    position: relative;
+    text-align: center;
+
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    
+}
